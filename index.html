@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Règles de confidentialité – Lettre à brûler</title>
+<!--
+  Source de la page publique des règles de confidentialité de l'app « Lettre à brûler ».
+  Publiée telle quelle dans le dépôt public ducoutpy-lgtm/lettre-a-bruler-confidentialite
+  (GitHub Pages) : https://ducoutpy-lgtm.github.io/lettre-a-bruler-confidentialite/
+  Toute modification se fait ici, puis se recopie dans ce dépôt public (voir docs/PUBLICATION-PLAY-STORE.md).
+  Les durées doivent rester identiques à supabase/migrations/002_conservation.sql.
+-->
+<style>
+  :root { --fond: #fbf7f0; --texte: #2b2420; --doux: #6b5f57; --trait: #e4dbcf; }
+  @media (prefers-color-scheme: dark) { :root { --fond: #17120f; --texte: #f1e8dc; --doux: #b6a899; --trait: #3a302a; } }
+  body { margin: 0; background: var(--fond); color: var(--texte); font: 16px/1.6 Georgia, "Times New Roman", serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; padding-top: 1rem; border-top: 1px solid var(--trait); }
+  .date, .note { color: var(--doux); font-size: .95rem; }
+  .resume { border-left: 3px solid var(--doux); padding-left: 1rem; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+<p class="date"><a href="en/" hreflang="en" lang="en">English version</a></p>
+<h1>Règles de confidentialité</h1>
+<p class="date">Application « Lettre à brûler » — en vigueur le 17 novembre 2026</p>
+
+<div class="resume">
+  <p><strong>En bref.</strong> Les lettres que vous brûlez ne quittent jamais votre téléphone et ne sont jamais enregistrées. Seule « La bouteille à la mer » utilise Internet : vos messages y circulent sous un identifiant anonyme, sans votre nom, sans e-mail et sans position. Sur nos serveurs, le texte d'une bouteille lue est effacé 2 jours après la lecture. Aucune publicité, aucune mesure d'audience.</p>
+</div>
+
+<h2>Qui est responsable de vos données</h2>
+<p>L'application est éditée par ARCADIA (Évry, France). Pour toute question sur vos données : <a href="mailto:contact@arcadiaco.fr">contact@arcadiaco.fr</a>.</p>
+
+<h2>1. La lettre à brûler</h2>
+<p>Le texte que vous écrivez n'existe que pendant que vous l'écrivez. Il n'est jamais enregistré (ni sur votre téléphone, ni ailleurs), jamais envoyé sur Internet et jamais conservé : il disparaît à la fin de la combustion. Personne, pas même l'éditeur, ne peut le lire.</p>
+
+<h2>2. La respiration, les rappels et les réglages</h2>
+<p>Vos réglages (rythme de respiration, son, vibration, heure du rappel) sont enregistrés uniquement sur votre téléphone. Les rappels sont programmés par votre téléphone lui-même : rien n'est envoyé.</p>
+
+<h2>3. La bouteille à la mer</h2>
+<p>C'est la seule partie de l'application qui échange des données avec notre hébergeur.</p>
+<ul>
+  <li><strong>Un identifiant anonyme</strong>, tiré au hasard et propre à votre téléphone, est créé dès votre première visite d'une île. Il ne contient ni votre nom, ni votre e-mail, ni votre numéro.</li>
+  <li><strong>Quand vous lancez une bouteille</strong> : le texte de votre message (1 000 caractères au plus), votre identifiant anonyme, l'île de l'application d'où vous l'avez lancée (un lieu de l'application, pas votre position réelle) et la date.</li>
+  <li><strong>Quand vous marchez sur un rivage</strong> : les bouteilles qui vous ont été proposées, rattachées à votre identifiant anonyme.</li>
+  <li><strong>Quand vous ouvrez une bouteille</strong> : votre identifiant anonyme comme lecteur, l'île et la date de la découverte ; et, si vous la signalez, le fait qu'elle a été signalée.</li>
+  <li><strong>Quand vous signalez une bouteille ou choisissez de ne plus recevoir les bouteilles de son auteur</strong> : le lien « tel identifiant anonyme ne reçoit plus les bouteilles de tel autre », sans jamais révéler l'auteur.</li>
+  <li><strong>En cas de manquement aux conditions d'utilisation</strong> : l'identifiant anonyme du téléphone concerné peut être placé sur une liste de téléphones bannis.</li>
+</ul>
+<p><strong>À quoi elles servent.</strong> Faire s'échouer votre bouteille sur le rivage d'une autre personne, vous prévenir qu'elle a été trouvée (et sur quelle île), permettre au lecteur de la signaler, et empêcher les abus (nombre de bouteilles limité par jour et par téléphone). Rien d'autre : ni publicité, ni profilage, ni revente.</p>
+<p><strong>Qui peut lire votre message.</strong> Une seule personne, inconnue de vous, qui le trouve par hasard. Elle ne sait pas qui l'a écrit. Vous ne savez pas qui l'a lu. N'écrivez ni nom, ni numéro, ni adresse dans une bouteille.</p>
+<p><strong>Combien de temps.</strong></p>
+<ul>
+  <li><strong>Texte d'une bouteille lue et identifiant de son lecteur</strong> : effacés de nos serveurs 2 jours après la lecture. La personne qui l'a lue peut toutefois avoir choisi de la garder dans sa collection, sur son propre téléphone.</li>
+  <li><strong>Ce qui reste d'une bouteille lue</strong> (identifiant anonyme de l'auteur, îles, dates, statut « trouvée » ou « signalée ») : supprimé 6 mois après la lecture. Cela permet de vous prévenir qu'elle a été trouvée.</li>
+  <li><strong>Bouteille jamais trouvée</strong> : supprimée 6 mois après son lancement.</li>
+  <li><strong>Bouteilles proposées sur un rivage</strong> : effacées après 24 heures.</li>
+  <li><strong>Blocages</strong> (« ne plus recevoir ses bouteilles ») : supprimés après 12 mois.</li>
+  <li><strong>Bannissement d'un téléphone</strong> : conservé tant que son identifiant anonyme existe.</li>
+  <li><strong>Identifiant anonyme</strong> : supprimé après 12 mois sans aucune utilisation de la bouteille à la mer, une fois qu'aucune bouteille ne s'y rattache plus.</li>
+</ul>
+<p>Ces suppressions sont automatiques et ont lieu toutes les heures.</p>
+<p><strong>Une bouteille lancée ne peut pas être reprise</strong>, comme une vraie bouteille à la mer.</p>
+<p><strong>Où.</strong> Les bouteilles sont hébergées par Supabase, sur des serveurs situés dans l'Union européenne (Irlande). Supabase agit pour notre compte (contrat de sous-traitance au sens de l'article 28 du RGPD) et n'utilise pas ces données pour lui-même. Comme tout serveur, il peut enregistrer brièvement des informations techniques de connexion (comme l'adresse IP) pour la sécurité du service.</p>
+<p><strong>Transferts hors de l'Union européenne.</strong> Même si les bouteilles sont stockées en Irlande, la société Supabase (dont le siège contractant est à Singapour) et certains de ses propres prestataires, situés notamment aux États-Unis, peuvent accéder à des données techniques pour l'assistance, la sécurité et le bon fonctionnement du service. Ces transferts sont encadrés par les clauses contractuelles types de la Commission européenne.</p>
+
+<h2>4. Ce qui reste sur votre téléphone</h2>
+<p>Sur votre téléphone restent vos réglages, les bouteilles que vous avez choisi de garder, les bouteilles lancées sans réseau en attendant de partir (effacées dès leur départ), la liste des bouteilles déjà ouvertes, signalées ou dont vous avez été prévenu (des identifiants, sans texte) et, si vous utilisez la bouteille à la mer, votre identifiant anonyme de connexion. Tout est supprimé si vous désinstallez l'application ou effacez ses données.</p>
+
+<h2>5. Sécurité</h2>
+<p>Les échanges entre l'application et notre hébergeur sont chiffrés (HTTPS). La base de données est verrouillée : aucun téléphone ne peut la lire directement ; seules quelques opérations précises sont autorisées, et aucune ne révèle l'identifiant d'un auteur ou d'un lecteur. Une bouteille ne peut être ouverte que par une seule personne, à qui elle a été proposée sur un rivage. Le nombre de bouteilles lancées et ouvertes est limité par jour et par téléphone.</p>
+
+<h2>6. Vos droits</h2>
+<p>Vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition sur vos données. L'application ne connaissant ni votre nom ni votre e-mail, nous ne pouvons pas relier une demande à vos bouteilles ; elles sont de toute façon effacées dans les délais indiqués ci-dessus. Pour toute question : <a href="mailto:contact@arcadiaco.fr">contact@arcadiaco.fr</a>. Vous pouvez aussi adresser une réclamation à la CNIL (<a href="https://www.cnil.fr">www.cnil.fr</a>).</p>
+
+<h2>7. Public</h2>
+<p>L'application est destinée aux adultes.</p>
+
+<h2>8. Modifications</h2>
+<p>Si ces règles changent, la nouvelle version sera publiée sur cette page avec sa date d'entrée en vigueur.</p>
+
+<p class="note">Cette application ne remplace pas un accompagnement médical ou psychologique. En cas de détresse, appelez le 3114 (numéro national de prévention du suicide, 24 h/24) ou le 15.</p>
+</main>
+</body>
+</html>
